@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<div class="container text-center">
+  <h1>Password Genrator</h1>
+  <a href="{% url 'about' %}"><h3>About</h3></a>
+  <form  action="{% url 'password' %}" >
+    <select  name="lenght">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12" selected='selected'>12</option>
+    </select> Lenght
+    <div class="container text-center">
+
+    <br>
+    <input type="checkbox" name="uppercase" >Uppercase
+  <br>
+  <input type="checkbox" name="lowecase" >Lowercase
+  <br>
+  <input type="checkbox" name="number" >Number
+  <br>
+  <input type="checkbox" name="special" >Special Charector
+  <br>
+  </div>
+    <input type="submit" value="Genrate Password" class="btn btn-primary">
+
+  </form>
+</div>
